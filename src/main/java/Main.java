@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.Scanner;
 
 public class Main {
@@ -13,7 +14,10 @@ public class Main {
         if (sex.toLowerCase().equals("m")) {
             Man hombre = new Man(birthdate);
             hombre.addContribution();
+            Period period = hombre.howMuchContributionNeededToRetirement();
+            System.out.println("Te faltan " + period.getYears() + "anios y " + period.getMonths() + "meses y (justInCase dias)" + period.getDays());
         } else if (sex.toLowerCase().equals("f")) {
+            //agregar beneficio hijos en woman object
 
         }
     }
