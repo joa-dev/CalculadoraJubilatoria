@@ -1,6 +1,5 @@
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.Scanner;
 
 public class Logic {
     private LocalDate birthdate = LocalDate.parse("1993-08-09");

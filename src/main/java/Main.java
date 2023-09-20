@@ -14,8 +14,7 @@ public class Main {
         if (sex.toLowerCase().equals("m")) {
             Man hombre = new Man(birthdate);
             hombre.addContribution();
-            Period period = hombre.howMuchContributionNeededToRetirement();
-            System.out.println("Te faltan " + period.getYears() + "anios y " + period.getMonths() + "meses y (justInCase dias)" + period.getDays());
+            System.out.println(hombre.howMuchContributionNeededToRetirement());
         } else if (sex.toLowerCase().equals("f")) {
             //agregar beneficio hijos en woman object
 
