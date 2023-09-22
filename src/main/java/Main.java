@@ -17,7 +17,10 @@ public class Main {
             System.out.println(hombre.howMuchContributionNeededToRetirement());
         } else if (sex.toLowerCase().equals("f")) {
             //agregar beneficio hijos en woman object
-
+            Woman mujer = new Woman(birthdate);
+            mujer.addContribution();
+            mujer.addChildren();
+            System.out.println(mujer.howMuchContributionNeededToRetirement());
         }
     }
 }

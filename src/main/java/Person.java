@@ -37,6 +37,10 @@ public class Person {
         }
     }
 
+    public void addContribution(long yearsToAdd) {
+        contribution = contribution.plusYears(yearsToAdd);
+    }
+
     public LocalDate getContribution() {
         return contribution;
     }
@@ -55,13 +59,6 @@ public class Person {
         }
     }
 }
-
-
-
-
-
-
-
 
 
 
